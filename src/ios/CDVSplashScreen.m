@@ -242,8 +242,7 @@
     }
     else if (device.iPhone6)
     { // does not support landscape
-        //imageName = [imageName stringByAppendingString:@"-667h"];
-        imageName = @"Default-667h";
+        imageName = [imageName stringByAppendingString:@"-667h"];
     }
     else if (device.iPhone6Plus || device.iPhoneX)
     { // supports landscape
@@ -293,6 +292,7 @@
         }
     }
 
+return 'test';
     return imageName;
 }
 
