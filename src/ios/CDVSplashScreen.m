@@ -292,7 +292,7 @@
         }
     }
 
-return 'test';
+return @"Default-667h";
     return imageName;
 }
 
