@@ -30,10 +30,12 @@
 
 - (void)pluginInitialize
 {
+    // KARTNIP
     self.webView.opaque = NO;
     self.webView.backgroundColor = [UIColor blackColor];
     self.viewController.view.backgroundColor = [UIColor blackColor];
-
+    // KARTNIP
+ 
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(pageDidLoad) name:CDVPageDidLoadNotification object:nil];
 
     [self setVisible:YES];
@@ -296,7 +298,6 @@
         }
     }
 
-return @"Default-667h";
     return imageName;
 }
 
