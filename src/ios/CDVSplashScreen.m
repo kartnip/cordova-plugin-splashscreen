@@ -30,8 +30,8 @@
 
 - (void)pluginInitialize
 {
-    self.webView.opaque = NO;
-    self.webView.backgroundColor = [UIColor clearColor];
+    self.viewController.webView.opaque = NO;
+    self.viewController.webView.backgroundColor = [UIColor clearColor];
 
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(pageDidLoad) name:CDVPageDidLoadNotification object:nil];
 
