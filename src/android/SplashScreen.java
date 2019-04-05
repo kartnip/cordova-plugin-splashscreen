@@ -138,6 +138,12 @@ public class SplashScreen extends CordovaPlugin {
         return fadeSplashScreenDuration;
     }
 
+@Override
+public void onBackPressed()
+{
+       return null;
+}
+
     @Override
     public void onPause(boolean multitasking) {
         if (HAS_BUILT_IN_SPLASH_SCREEN) {
