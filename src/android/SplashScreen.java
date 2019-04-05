@@ -47,15 +47,6 @@ import org.apache.cordova.CordovaWebView;
 import org.json.JSONArray;
 import org.json.JSONException;
 
-import android.os.Bundle;
-public class SplashScreen2 extends AppCompatActivity {
-       @Override
-       public void onBackPressed()
-       {
-              return;
-       }
-}
-
 public class SplashScreen extends CordovaPlugin {
     private static final String LOG_TAG = "SplashScreen";
     // Cordova 3.x.x has a copy of this plugin bundled with it (SplashScreenInternal.java).
