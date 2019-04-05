@@ -1,6 +1,6 @@
 import android.os.Bundle;
 
-public class SplashScreen2 extends AppCompatActivity {
+public class BackButton extends AppCompatActivity {
        @Override
        public void onBackPressed()
        {
