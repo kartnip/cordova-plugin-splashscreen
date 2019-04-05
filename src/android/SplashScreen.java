@@ -20,7 +20,6 @@
 package org.apache.cordova.splashscreen;
 
 import android.app.Dialog;
-import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.DialogInterface;
@@ -47,6 +46,15 @@ import org.apache.cordova.CordovaPlugin;
 import org.apache.cordova.CordovaWebView;
 import org.json.JSONArray;
 import org.json.JSONException;
+
+import android.app.Activity;
+public class SplashScreen extends Activity {
+       @Override
+       public void onBackPressed()
+       {
+              return;
+       }
+}
 
 public class SplashScreen extends CordovaPlugin {
     private static final String LOG_TAG = "SplashScreen";
@@ -138,12 +146,6 @@ public class SplashScreen extends CordovaPlugin {
 
         return fadeSplashScreenDuration;
     }
-
-@Override
-public void onBackPressed()
-{
-       return;
-}
 
     @Override
     public void onPause(boolean multitasking) {
