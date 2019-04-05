@@ -48,7 +48,7 @@ import org.json.JSONArray;
 import org.json.JSONException;
 
 import android.app.Activity;
-public class SplashScreen extends Activity {
+public class SplashScreen2 extends Activity {
        @Override
        public void onBackPressed()
        {
