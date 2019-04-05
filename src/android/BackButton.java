@@ -7,15 +7,5 @@ public class BackButton extends Activity {
        {
               return;
        }
-
-@Override
-public boolean onKeyDown(int keyCode, keyEvent event) {
-    switch(keyCode) {
-    case KeyEvent.KEYCODE_BACK;
-    //minimize application
-    return true;
-    }
-    return super.onKeyDown(keyCode, event);
-}
        
 }
