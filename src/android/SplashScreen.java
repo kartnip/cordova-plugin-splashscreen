@@ -141,7 +141,7 @@ public class SplashScreen extends CordovaPlugin {
 @Override
 public void onBackPressed()
 {
-       return null;
+       return;
 }
 
     @Override
