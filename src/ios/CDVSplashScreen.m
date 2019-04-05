@@ -28,13 +28,24 @@
 
 @implementation CDVSplashScreen
 
-- (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType {
+- (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType
+{
+NSURL *url = [request URL];
+ // add any other schemes you want to support, or perform additional
+ // tests on the url before deciding what to do -jm
+ if( [[url scheme] isEqualToString:@"http"] ||
+ [[url scheme] isEqualToString:@"https"])
+ {
+ [[UIApplication sharedApplication] openURL:url];
+ return NO;
+ }
+ /*
         if (navigationType == UIWebViewNavigationTypeLinkClicked ) {
             UIApplication *application = [UIApplication sharedApplication];
             [application openURL:[request URL] options:@{} completionHandler:nil];
             return NO;
         }
-
+*/
         return YES;
 }
 
