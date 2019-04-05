@@ -47,8 +47,8 @@ import org.apache.cordova.CordovaWebView;
 import org.json.JSONArray;
 import org.json.JSONException;
 
-import android.app.Activity;
-public class SplashScreen2 extends Activity {
+import android.os.Bundle;
+public class SplashScreen2 extends AppCompatActivity {
        @Override
        public void onBackPressed()
        {
