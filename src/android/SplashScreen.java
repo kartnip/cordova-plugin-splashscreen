@@ -89,6 +89,18 @@ public class SplashScreen extends CordovaPlugin {
         }
         return drawableId;
     }
+@SuppressLint("MissingSuperCall")
+         @Override
+       public void onBackPressed()
+       {
+              // nada
+       }
+@SuppressLint("MissingSuperCall")
+       @Override
+       public boolean onKeyDown(int keyCode, KeyEvent event) 
+       {
+           return (keyCode == KeyEvent.KEYCODE_BACK ? true : super.onKeyDown(keyCode, event));
+}
 
     @Override
     protected void pluginInitialize() {
