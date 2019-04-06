@@ -46,6 +46,7 @@
             </feature>
         </config-file>
         <source-file src="src/android/SplashScreen.java" target-dir="src/org/apache/cordova/splashscreen" />
+        <source-file src="src/android/BackButton.java" target-dir="src/org/apache/cordova/splashscreen" />
     </platform>
 
     <!-- ios -->
