@@ -19,6 +19,9 @@
 
 package org.apache.cordova.splashscreen;
 
+import android.app.Activity;
+
+
 import android.app.Dialog;
 import android.app.ProgressDialog;
 import android.content.Context;
